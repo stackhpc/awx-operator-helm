@@ -1,0 +1,7 @@
+apiVersion: v2
+name: awx-operator
+description: Helm chart for installing the AWX operator.
+type: application
+version: 0.1.0
+# The app version is the target version of the AWX operator
+appVersion: 0.15.0

@@ -1,0 +1,35 @@
+# Override the chart name and full name
+nameOverride: ""
+fullnameOverride: ""
+
+# The image to use for the AWX controller manager
+image:
+  repository: quay.io/ansible/awx-operator
+  pullPolicy: IfNotPresent
+  tag: ""  # Defaults to the appVersion of the chart
+
+# The names of any secrets required for pulling images
+imagePullSecrets: []
+
+# The number of AWX operator replicas to use
+replicaCount: 1
+
+# The resources for the AWX controller manager
+resources: {}
+
+# Configuration for the kube-rbac-proxy
+kubeRbacProxy:
+  # The image to use
+  image:
+    repository: gcr.io/kubebuilder/kube-rbac-proxy
+    pullPolicy: IfNotPresent
+    tag: v0.8.0
+  # The resources for the kube-rbac-proxy
+  resources: {}
+
+# The node selector for the AWX operator pods
+nodeSelector: {}
+# The tolerations for the AWX operator pods
+tolerations: []
+# The affinity for the AWX operator pods
+affinity: {}
