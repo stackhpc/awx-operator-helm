@@ -3,7 +3,17 @@ entries:
   awx-operator:
   - apiVersion: v2
     appVersion: 0.15.0
-    created: "2021-12-06T14:28:03.864411196Z"
+    created: "2021-12-06T15:01:06.905607891Z"
+    description: Helm chart for installing the AWX operator.
+    digest: f5b9a09e59f89afac1c73712bae1a372c43794edc156f9e9f3477a338c5d5644
+    name: awx-operator
+    type: application
+    urls:
+    - awx-operator-0.1.0-dev.0.main.3.tgz
+    version: 0.1.0-dev.0.main.3
+  - apiVersion: v2
+    appVersion: 0.15.0
+    created: "2021-12-06T15:01:06.905000692Z"
     description: Helm chart for installing the AWX operator.
     digest: 5cb2b140995c72aba1fefe7514b959aebb344093d75c0560ffc036ba28c996be
     name: awx-operator
@@ -13,7 +23,7 @@ entries:
     version: 0.1.0-dev.0.main.2
   - apiVersion: v2
     appVersion: b685b84
-    created: "2021-12-06T14:28:03.862887587Z"
+    created: "2021-12-06T15:01:06.904192593Z"
     description: Helm chart for installing the AWX operator.
     digest: 23079092cbf49908614e04da75a306777676ecf3e599de65259497b9d70f82ec
     name: awx-operator
@@ -21,4 +31,4 @@ entries:
     urls:
     - awx-operator-0.1.0-dev.0.main.1.tgz
     version: 0.1.0-dev.0.main.1
-generated: "2021-12-06T14:28:03.861751081Z"
+generated: "2021-12-06T15:01:06.902690794Z"
