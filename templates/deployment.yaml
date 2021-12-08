@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "awx-operator.fullname" . }}-controller-manager
+  name: awx-operator-controller-manager
   labels: {{ include "awx-operator.labels" . | nindent 4 }}
 spec:
   replicas: {{ .Values.replicaCount }}
@@ -14,7 +14,7 @@ spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets: {{ toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "awx-operator.fullname" . }}-controller-manager
+      serviceAccountName: awx-operator-controller-manager
       securityContext:
         runAsNonRoot: true
       terminationGracePeriodSeconds: 10
@@ -39,7 +39,7 @@ spec:
         - --health-probe-bind-address=:6789
         - --metrics-bind-address=127.0.0.1:8080
         - --leader-elect
-        - --leader-election-id={{ include "awx-operator.fullname" . }}
+        - --leader-election-id=awx-operator
         env:
         - name: ANSIBLE_GATHERING
           value: explicit
