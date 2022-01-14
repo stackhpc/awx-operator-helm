@@ -4,7 +4,7 @@ fullnameOverride: ""
 
 # The image to use for the AWX controller manager
 image:
-  repository: quay.io/ansible/awx-operator
+  repository: ghcr.io/stackhpc/awx-operator
   pullPolicy: IfNotPresent
   tag: ""  # Defaults to the appVersion of the chart
 
